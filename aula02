@@ -1,0 +1,21 @@
+# Faça a lista com 10 números disitada pelo usuário 
+lista = []
+for i in range(10):
+    valor = int(input(f"Digite o {i+1}º valor: "))
+    lista.append(valor)
+
+# Fazer a separação de números impares e pares 
+numeros_pares = [num for num in lista if num % 2 == 0]
+numeros_impares = [num for num in lista if num % 2 != 0]
+
+# Exibir tanto os números pares como os ímpares em uma tupla, e a quantidade de pares e ímpares
+print("Números Pares:", numeros_pares)
+print("Números Ímpares:", tuple(numeros_impares))
+print("Quantidade de Números Pares:", len(numeros_pares))
+print("Quantidade de Números Ímpares:", len(numeros_impares))
+
+# Fazer a soma de todos os números pares e ímpares
+soma_pares = sum(numeros_pares)
+soma_impares = sum(numeros_impares)
+print("Soma dos Números Pares:", soma_pares)
+print("Soma dos Números Ímpares:", soma_impares)
